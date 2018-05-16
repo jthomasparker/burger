@@ -1,7 +1,7 @@
 var mysql = require('mysql')
 
 
-var connection = mysql.createConnection({
+var connection = mysql.createPool({
     host: "us-cdbr-iron-east-04.cleardb.net" || "localhost",
    // port: process.env.PORT || 3306,
     user: "b14a9598a17f0a" || "root",
