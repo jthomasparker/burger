@@ -4,7 +4,6 @@ var PORT = process.env.PORT || 8080;
 var app = express();
 var exphbs = require('express-handlebars')
 var routes = require('./controllers/burgers_controller.js')
-//var apiRoutes = require('./controllers/burgers_controller.js')(app)
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
